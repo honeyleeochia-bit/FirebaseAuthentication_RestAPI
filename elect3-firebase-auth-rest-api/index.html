@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firebase Auth REST Mini App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <h1>Firebase Auth REST Mini App</h1>
+  <button id="themeToggle" class="btn secondary">Toggle Theme</button>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Authentication</h2>
+
+    <div class="field">
+      <label>Email</label>
+      <input id="email" type="email" placeholder="name@example.com" />
+    </div>
+
+    <div class="field">
+      <label>Password</label>
+      <input id="password" type="password" placeholder="Min 6 characters" />
+    </div>
+
+    <div class="actions">
+      <button id="registerBtn" class="btn">Register</button>
+      <button id="loginBtn" class="btn">Login</button>
+      <button id="logoutBtn" class="btn danger" disabled>Logout</button>
+    </div>
+
+    <p id="loading" class="loading hidden">Loading…</p>
+    <p id="error" class="msg error hidden"></p>
+    <p id="success" class="msg success hidden"></p>
+  </section>
+
+  <section class="card">
+    <h2>Protected Profile</h2>
+    <button id="profileBtn" class="btn secondary" disabled>Fetch Profile</button>
+    <pre id="result" class="result"></pre>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Powered by Firebase Authentication REST API</p>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
